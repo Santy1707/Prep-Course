@@ -1,0 +1,49 @@
+Que es una Variable?
+Una variable es un elemento que utilizamos para almacenar, haciendo referencia a otro valor, que es el que estamos almacenando, para crear una variables usamos la palabra reservada 'var' seguida de un espacio y el nombre de la variables, es decir, el valor que le queremos dar a la variable.
+Luego de declarar una variable podemos asignarle un valor usando el signo =
+Ejemplo: var nombre = 'Tomas'
+
+Que es un String?
+Un String es un tipo de dato, este indica que el dato que vamos a usar es un bloque de texto, siempre lo debemos colocar entre comillas dobles o simples, por ejemlo 
+'Me gusta programar', por lo tanto decimos que cualquier texto entre comillas es una cadena o string.
+
+Que es una funcion'
+Las funciones las utilizamos para agrupar lineas de codigo en tareas con un nomnbre, luego hacemos referencia al nombre que le hemos dado a la funcion para realizar todo lo que hemos agrupado en esta, para usarlas debemos en primer lugar declarar la funcion, es decir, darle un nombre y decirle que tareas debe realizar, luego la ejecutamos, para ello llamamos a la funcion para que realice las tareas de su contenido.
+Ejemplo:
+
+La funcion se llama elevarAlCubo, y hemos agregado un argumento, este argumento es num, para entenderlo mejor, es como una variable, en este caso la variable num. 
+para ver como se ejecuta, podemos usar la consola de nuestro navegador, declarar la funcion y luego ejecutarla,  
+
+Declaracion de funcion:
+function elevarAlCubo(num) {
+  // Devuelve el valor de "num" elevado al cubo
+  // Tu código:
+  return num*num*num;
+}
+
+Ejecucion de la Funcion.
+elevarlAlcubo (45)
+91125
+
+En la declaracion de la funcion vimos la palabra return, esta es una declaracion que utilizamos dentro de las tareas que tiene la funcion y significa que RETORNE el valor correspondiente, en el ejemplo, la tarea es que retorne num*num*num, en otras palabras, num al cubo, por lo tanto al ejecutar la funcion introducimos el numero entre parentesis y el resultado va a ser dicho numero pero elevado al cubo.
+
+Que es una declaracion.
+
+Una declaracion es una instruccion que utilizamos en nuestras lineas de codigo, tomando como ejemplo el codigo de la funcion anterior, tenemos que return es la declaracion con la cual obtenemos el resultado, entonces return la utilizamos para hacer en este caso la multiplicacion num*num*num; 
+
+Ejemplo:
+function puedeManejar(edad) {
+    if (edad > 18) {
+        return true;
+    }
+
+    return false;
+}
+
+la funcion la tenemos declarada, y la ejecutamos como en el ejercicio anterior cuando introducimos un numero entre el parentesis, entonces si yo le pongo 15 me va a retornar algo, segun lo que hayamos puesto en return, si yo le pondo 45 me retornará otra cosa, entonces surge la pregunta, porque saldrá algo distinto? analizando el codigo vemos la sentencia condicional if, esto se usa para tomar una decision y mostrar un resultado, si es mayor que 18 return true (retorna verdadero) si es menor que 18 return false (retorna falso)
+
+Que son los valores booleanos?
+
+Los booleanos son un tipo de dato que utilizamos comunmente en programacion y solo tienen dos posibles valores, true and false, es decir, yo tenga una variable llamada  var Quieroprogramar:boolean = true;
+al poner booelan le estoy diciendo a JavaScript que la variable es un dato booleano y ademas su valor es true, en conclusion, los booleanos son un tipo de dato que solo puede representar uno de dos valores, true o false.
+
