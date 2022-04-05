@@ -1,0 +1,53 @@
+Hola, vamos a ver los siguientes conceptos sobre JavaScript
+
+//Que significa 'for'//
+
+For es un bucle que utilizamos para hacer que algo se repita varias veces, este bucle tiene 3 partes, la declaracion de una variable, una condicion y una repeticion, todo se va a ejecutar siempre y cuando se cumpla la condición, veamos un ejemplo
+
+for (var i = 20; i < 100; i++) {
+    console.log(i);
+}
+
+Console.log significa que vamos a imprimir un mensaje en la consola, el mensaje sera la variable i, la variable i al iniciar es 20, la condicion es que tiene que ser menor que 100, y se repetirá siempre y cuando se cumpla la condicion, es decir, el bucle va aumentando i hasta si se cumple la condicion, entonces tenemos 20, luego 21, luego 22, etc.. hasta que llega a 99, cuando llega a 100 vemos que no se cumple la condicion, razón por la cual no se ejecuta el bucle, como conclusión for es un bucle en el cual definimos una variable, hacenos una expresion condicional e incrementamos la variable, el bucle se repetirá si la condicion es true, si es false dejará de funcionar.
+
+Los proximos tres conceptos son operadores, vamos a ver para que sirven
+
+//Que significa &&//
+
+Significa "Y" (AND en inglés) con este operador evaluamos dos expresiones y si ambas son true, devolverá verdadero, Si una o ambas expresiones son false, devolverá false.
+Ejemplo 
+var i = nombre
+var j = apellido
+
+if (nombre = martin && apellido = perez){
+    return true;
+}
+    return false
+
+Si la variable nombre es martin y la variable apellido es perez, devuelve true, sino devuelve false.
+
+//Que significa ||//
+
+Significa "Ó" (OR en Inglés) en este caso evalua si una de las expresiones es verdadera, devolverá true si una o ambas de estas son true, Devolverá false solo si AMBAS son false.
+Ejemplo:
+
+if (100>10 || 10 === 10 )
+   (el codigo se ejecuta porque ambas son verdaderas)
+if (100<10 || 10 === 10 )
+   (el codigo se ejecuta porque por lo menos una es verdaderas)
+if (100<10 || 10 === 11 )
+   (el codigo NO se ejecuta porque ambas son FALSAS)
+
+
+//Que significa !//
+
+Significa NO (NOT en Inglés) este operador devolverá el valor booleano opuesto de lo que se le pase, es decir, si una expresion es true este operador devolverá false, ya que es lo contrario.
+
+Ejemplo:
+
+
+if (!valor)
+    console.log (en el caso donde el valor sea true se retornará false, ya que es lo contrario)
+if (! 5 * 5 = 25)
+    console.log (5 por 5 es 25 y por lo tanto es true, entonces al tener el operador ! este codigo no se ejecuta, porque en este caso sería false)
+
