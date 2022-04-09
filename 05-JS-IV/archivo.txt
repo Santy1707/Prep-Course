@@ -1,0 +1,97 @@
+Que son objetos
+
+Es un contenedor de datos, contiene mucha informacion sobre una sola cosa, para introducir los datos en el objeto debemos usar los pares Clave:Valor, y se deben separar por una coma, se almacenan datos como strings, numbers, booleans, arrays o incluso otro objeto.
+
+Importante: la claves deben tener un nombre individual, es decir, no podemos pensar en tener varias claves y ponerles el mismo nombre, por otra parte, varias claves pueden tener el mismo valor.
+
+Ejemplo:
+
+const jugador = {
+    nombredejugador: 'Nacho25',
+    contraseña: 'Nacho2022'
+    juegafornite: true,
+    nivel: 15
+};
+
+
+Notación de puntos vs Notación de corchetes
+
+Ya tenemos definidos los pares Clave:Valor, ahora queremos llamar a los valores y para ello podemos utilizar puntos o corchetes, con la notación punto llamamos al nombre del objeto, un punto y el nombre la clave, ejemplo.
+
+jugador.nombredejugador; // Nacho25
+
+Por otra parte, con la notación de corchetes ponemos el nombre del objeto, y entre corchetes la clave envuelta en comillas y/o una cadena, numero o variable que apunto a una cadena o numero, ejemplo:
+
+const equipo: 'azul'
+
+jugador['nombredejugador']; // Nacho25
+jugador['contraseña']; // Nacho2022
+jugador[equipo]; // azul
+
+
+Que son propiedades
+
+Las propiedad son los datos que tiene el objeto asignados con los pares clave:valor, en el ejemplo anterior:
+
+const jugador = {
+    nombredejugador: 'Nacho25',
+    contraseña: 'Nacho2022'
+    juegafornite: true,
+    nivel: 15
+};
+
+nombredejugador: 'Nacho25' es una propiedad del objeto, al igual que nivel: 15, lo que aprendimos con la notación punto y corchete fue precisamente como llamar a las propiedad, para eliminarlas usamos la palabra clave delete:
+
+delete jugador.nombredejugador;
+
+
+Que son métodos
+
+En los objetos podemos establecer los valores en funciones, las funciones guardadas en un objeto se llaman métodos, como ejemplo .length, .pop, .push.
+
+se puede establecer una clave para un nombre y el valor para una funcion, es decir, tener una nombre y que su valor sea una funcion.
+
+Para llamar al método usamos puntos y paréntesis al final, ejemplo:
+
+const objetonuevo = {
+    darsaludo : function () {
+        console.log ('hola como vas');
+    }    
+}
+
+objetonuevo.darsaludo (); //hola como vas
+
+
+
+Que es el bucle for in
+
+El bucle for in es especial para los objetos, es como un for adaptado a las caracteristicas de un objeto, entre paréntesis declaramos una variable, la palabra clave in y el nombre del objeto, asi va a recorrer caa  clave del objeto y finalizará cuando haya iterado todas las claves, podemos usar esta clave y la notación de corchetes en el bucle for para acceder al valor asociado con dicha clave, ejemplo.
+
+const jugador = {
+    nombredejugador: 'Nacho25',
+    contraseña: 'Nacho2022'
+    juegafornite: true,
+    nivel: 15
+};
+
+for (let clave in usuario) {
+    console.log (clave);
+    console.log (usuario[clave]);
+}
+
+// nombredejugador
+// Nacho25
+// Contraseña
+// Nacho2022
+// juegafornite 
+// true
+// nivel
+// 15
+
+
+
+
+
+
+
+
