@@ -1,0 +1,37 @@
+Hola, vamos a ver que significa un array en JavaScript
+
+Un arrar es como una varaible donde almacenamos no solo un dato sino muchos, estos datos pueden ser numeros, cadenas de texto (strings) o booleans, 
+
+Por ejemplo, yo quiero tener una lista de nombres, o una lista de ingredientes, etc, consiste en que necesitamos almacenar varios datos que se asocian a una sola defnición o concepto, por ejemplo:
+
+Equipos de futbol de españa, hay muchos y los podemos agrupar en una sola variable, que es el arrar cuyo nombre será precisamente equipos de futbol de españa:
+
+EquiposdeFutboldeEspaña = [Real Madrid, Barcelona, Atlético de Madrid, Sevilla, entre otros]
+
+En el array anterior vemos que hay elementos tipo string solamente, pero podría ser 
+
+EquiposdeFutboldeEspaña = [Real Madrid, Barcelona, Atlético de Madrid, Sevilla, 1598, null, undefined, true]
+
+y tambien podemos tener un array dentro de una array:
+
+EquiposdeFutboldeEspaña = [Real Madrid, Barcelona, Atlético de Madrid, Sevilla, 1598, null, undefined, true, [1, 2, 3, 4]]
+
+
+Si intentamos ver que sucede con el array en la consola del navegador no sale lo siguiente
+
+EquiposdeFutboldeEspaña = [Real Madrid, Barcelona, Atlético de Madrid, Sevilla, 1598, null, undefined, true, [1, 2, 3, 4]]
+
+Luego escribimos el nombre del array y damos enter y sale lo siguiente:
+
+EquiposdeFutboldeEspaña
+(9) ['Real Madrid', 'Barcelona', 'Atlético de Madrid', 'Sevilla', 1598, null, undefined, true, Array(4)]
+
+Si al final le ponemos .length no sale lo siguiente: 
+
+EquiposdeFutboldeEspaña.length
+9
+
+.length nos va a decir el número de elementos del array
+
+
+Espero que hayas entendido, saludo!
